@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoinDetails"
+    android:background="#ABB2B9 ">
+
+    <ImageView
+        android:id="@+id/detail_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_alignParentTop="true"
+        android:padding="2dp" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="hello"
+        android:padding ="2dp"
+        android:textSize="@dimen/result_text"
+
+        />
+
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/date"
+        android:text="hello"
+        android:textSize="@dimen/result_text"
+        android:padding= "2dp"
+
+        />
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+
+        android:layout_height="180dp"
+        android:layout_below="@+id/detail_icon"
+        android:id="@+id/chart"
+        android:padding="3dp"
+
+        >
+
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Holdings:"
+        android:layout_below="@+id/detail_market_cap"
+        android:padding = "7dp"
+        android:background="#85929E"
+
+        android:textSize="@dimen/regular_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None"
+        android:layout_gravity="end"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/detail_market_cap"
+        android:padding="7dp"
+        android:id="@+id/current_holdings"
+        android:textSize="@dimen/regular_text"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/current_price"
+        android:layout_below="@+id/chart"
+        android:padding="7dp"
+        android:background="#85929E"
+        android:id="@+id/current_price_label"
+        android:textSize="@dimen/regular_text"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chart"
+        android:padding="7dp"
+        android:id="@+id/detail_price"
+        android:textSize="@dimen/regular_text"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent"
+        android:layout_below="@+id/detail_price"
+        android:padding="7dp"
+
+
+        android:textSize="@dimen/regular_text"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/detail_price"
+        android:padding="7dp"
+        android:id="@+id/detail_percent"
+        android:textSize="@dimen/regular_text"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_volume"
+        android:layout_below="@+id/detail_percent"
+        android:padding="7dp"
+        android:background="#85929E"
+
+        android:textSize="@dimen/regular_text"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/detail_percent"
+        android:padding="10dp"
+        android:id="@+id/detail_volume"
+        android:textSize="@dimen/regular_text"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/market_cap"
+        android:layout_below="@+id/detail_volume"
+        android:padding="7dp"
+
+        android:textSize="@dimen/regular_text"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/detail_volume"
+        android:padding="7dp"
+        android:id="@+id/detail_market_cap"
+        android:textSize="@dimen/regular_text"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_holdings"
+        android:text="@string/quantity"
+        android:padding="7dp"
+        android:textSize="@dimen/regular_text"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/current_holdings"
+        android:hint="amount"
+        android:inputType="numberDecimal"
+        android:padding="7dp"
+        android:textSize="@dimen/regular_text"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_coin"
+        android:layout_alignParentBottom="true"
+        android:background="#85929E"
+
+        android:onClick="addCoin"/>
+
+
+
+
+</RelativeLayout>

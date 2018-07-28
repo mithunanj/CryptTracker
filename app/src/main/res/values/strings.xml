@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CryptTracker</string>
+    <string name="portfolio_value">Portfolio Value:</string>
+    <string name="your_coins">Your Coins</string>
+    <string name="top_coins">Top Coins</string>
+    <string name="price">Price:</string>
+    <string name="day_volume">24hVolume:</string>
+    <string name="percent">24hChange:</string>
+    <string name="name">Name</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="current_price">Current Price</string>
+    <string name="trade_price">Trade Price</string>
+    <string name="quantity">Quantity Bought</string>
+    <string name="add_coin">ADD COIN</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="delete_all">Delete All </string>
+    <string name="delete">Delete </string>
+    <string name="delete_amount">Delete Amount</string>
+    />
+    />/>
+    />
+</resources>
