@@ -50,7 +50,6 @@ public class YourCoins extends Fragment {
 
 
         coinAdapter = new CoinAdapter(getActivity(),coins,YourCoins.this);
-        Log.d("activity", getActivity().toString());
         recyclerView.setAdapter(coinAdapter);
         myDB = DatabaseHelper.getInstance(getContext());
         Cursor result = myDB.getData();
@@ -77,7 +76,6 @@ public class YourCoins extends Fragment {
 
                     @Override
                     public void onRequestFinished(Request<StringRequest> request) {
-                        Log.d("hello","here");
                         coinAdapter.notifyDataSetChanged();
 
 

@@ -3,6 +3,7 @@ package com.example.draymond.crypttracker;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDialogFragment;
 import android.util.Log;
@@ -38,6 +39,9 @@ public class DeleteDialog extends AppCompatDialogFragment {
                     public void onClick(DialogInterface dialog, int which) {
                         Integer integer = DatabaseHelper.getInstance(getActivity()).delete(getArguments().getString("ID"));
                         Log.d("id",integer.toString());
+                        Intent i = new Intent(getContext(),MainActivity.class);
+                        getContext().startActivity(i);
+
 
 
 

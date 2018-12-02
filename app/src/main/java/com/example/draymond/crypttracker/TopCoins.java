@@ -103,8 +103,8 @@ public class TopCoins extends Fragment implements SearchView.OnQueryTextListener
 
 
 
-        while(start<1600){
-            requestQueue.add(new Rest(coins).topCoinsCall(start));
+
+            requestQueue.add(new Rest(coins).topCoinsCall());
             requestQueue.addRequestFinishedListener(new RequestQueue.RequestFinishedListener<StringRequest>() {
 
                 @Override
@@ -117,9 +117,9 @@ public class TopCoins extends Fragment implements SearchView.OnQueryTextListener
                 }
             });
 
-            start = start + 100;
 
-        }
+
+
 
 
 

@@ -81,8 +81,6 @@ public class CoinAdapter extends RecyclerView.Adapter<CoinAdapter.CoinViewHolder
 
 
 
-
-
                     return true;
 
 

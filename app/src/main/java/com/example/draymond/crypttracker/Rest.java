@@ -55,10 +55,10 @@ public class Rest {
         this.times  = times;
     }
 
-    public  JsonObjectRequest topCoinsCall(int start) {
+    public  JsonObjectRequest topCoinsCall() {
 
 
-        String url = TOP_COINS + Integer.toString(start) + LIMIT;
+        String url = TOP_COINS + "1" + LIMIT;
 
         objectRequest = new JsonObjectRequest(Request.Method.GET,url,null, new Response.Listener<JSONObject>() {
 
@@ -131,7 +131,6 @@ public class Rest {
         objectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Log.d("amount", "hello");
                 try{
                     JSONObject coinInfo = response.getJSONObject("data");
 
